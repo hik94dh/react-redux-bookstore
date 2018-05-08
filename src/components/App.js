@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Container, Card } from 'semantic-ui-react';
-import { setBooks } from './actions/books';
-import MenuComponent from './components/Menu';
-import BookCard from './components/BookCard';
+import MenuComponent from './Menu';
+import BookCard from './BookCard';
+import Filter from './Filter';
 import axios from 'axios'; // - библиотека, которая позволяет отправлять http-запросы
 
 class App extends Component {
@@ -19,10 +18,12 @@ class App extends Component {
     return (
         <Container>
           <MenuComponent />
+          <Filter />
           <br />
           <Card.Group itemsPerRow={4} >
-                {!isReady ? 'Загрузка....' :
-                    books.map(book => (
+                {!isReady
+                    ? 'Загрузка....'
+                    : books.map((book) => (
                         <BookCard key={book.id} {...book} />
                     ))}
           </Card.Group>
@@ -31,13 +32,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = ({ books }) => ({
-    books: books.items,
-    isReady: books.isReady
-});
-
-const mapDispatchToProps = dispatch => ({
-    setBooks: books => dispatch(setBooks(books))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

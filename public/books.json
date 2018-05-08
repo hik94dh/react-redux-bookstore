@@ -54,16 +54,6 @@
     "rating": 0
   },
   {
-    "id": 6,
-    "title":
-      "Очаровательный кишечник. Как самый могущественный орган управляет нами",
-    "author": "Джулия Эндерс",
-    "image":
-      "https://cv6.litres.ru/sbc/32764469_cover_185-elektronnaya-kniga-dzhuliya-enders-ocharovatelnyy-kishechnik-kak-samyy-moguschestvennyy-organ-upravlyaet-nami-12178377.jpg",
-    "price": 573,
-    "rating": 4
-  },
-  {
     "id": 7,
     "title": "iPhuck 10",
     "author": "Виктор Пелевин",
@@ -80,15 +70,6 @@
       "https://cv9.litres.ru/sbc/33833192_cover_185-elektronnaya-kniga--.jpg",
     "price": 347,
     "rating": 5
-  },
-  {
-    "id": 9,
-    "title": "Девушка во льду",
-    "author": "Роберт Брындза",
-    "image":
-      "https://cv3.litres.ru/sbc/31989433_cover_185-elektronnaya-kniga-robert-bryndza-12646976-devushka-vo-ldu.jpg",
-    "price": 882,
-    "rating": 2
   },
   {
     "id": 10,

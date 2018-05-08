@@ -13,7 +13,6 @@ const BookCard = ({ title, author, price, image}) => (
             {author}
         </span>
             </Card.Meta>
-
         </Card.Content>
         <Card.Content extra>
             <a>
