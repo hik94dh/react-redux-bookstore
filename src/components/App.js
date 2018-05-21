@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Card } from 'semantic-ui-react';
-import MenuComponent from './Menu';
-import BookCard from './BookCard';
+import BookCard from '../containers/BookCard';
 import Filter from '../containers/Filter';
+import MenuComponent from '../containers/Menu';
 import axios from 'axios'; // - библиотека, которая позволяет отправлять http-запросы
 
 class App extends Component {
